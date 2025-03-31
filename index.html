@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Generated Images</h1>
+        <p class="subtitle">A collection of stunning images created by AI</p>
+        
+        <div class="filter-container">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="abstract">Abstract</button>
+            <button class="filter-button" data-filter="landscape">Landscape</button>
+            <button class="filter-button" data-filter="portrait">Portrait</button>
+            <button class="filter-button" data-filter="surreal">Surreal</button>
+        </div>
+    </header>
+    
+    <main>
+        <div class="gallery">
+            <div class="gallery-item" data-category="abstract">
+                <img src="./images/image_1.png" alt="AI Generated Abstract Art">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Cosmic Dreamscape</h3>
+                    <p class="gallery-item-desc">Abstract digital composition</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="./images/image_1.png" alt="AI Generated Abstract Art">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Cosmic Dreamscape</h3>
+                    <p class="gallery-item-desc">Abstract digital composition</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="abstract">
+                <img src="./images/image_1.png" alt="AI Generated Abstract Art">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Cosmic Dreamscape</h3>
+                    <p class="gallery-item-desc">Abstract digital composition</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="abstract">
+                <img src="./images/image_2.png" alt="AI Generated Abstract Art">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Liquid Geometry</h3>
+                    <p class="gallery-item-desc">Flowing abstract forms</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="abstract">
+                <img src="./images/image_3.png" alt="AI Generated Abstract Art">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Neural Patterns</h3>
+                    <p class="gallery-item-desc">Digital abstraction</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="landscape">
+                <img src="./images/image_4.png" alt="AI Generated Landscape">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Ethereal Mountains</h3>
+                    <p class="gallery-item-desc">Fantasy landscape at sunset</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="landscape">
+                <img src="https://modelslab-bom.s3.amazonaws.com/generations/743fedaa-c470-42eb-b01a-80ff9a025c75-3.jpg" alt="AI Generated Landscape">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Crystal Forest</h3>
+                    <p class="gallery-item-desc">Alien landscape exploration</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="landscape">
+                <img src="./images/image_6.png" alt="AI Generated Landscape">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Nebula Gardens</h3>
+                    <p class="gallery-item-desc">Cosmic nature fusion</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="portrait">
+                <img src="./images/image_7.png" alt="AI Generated Portrait">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Digital Identity</h3>
+                    <p class="gallery-item-desc">Futuristic portrait concept</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="portrait">
+                <img src="./images/image_8.png" alt="AI Generated Portrait">
+                <div class="gallery-item-info">
+                    <h3 class="gallery-item-title">Quantum Soul</h3>
+                    <p class="gallery-item-desc">Conceptual portrait study</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="video-section">
+        <h2>AI Video Generation</h2>
+        <p class="subtitle" style="text-align: center; margin-bottom: 2rem;">Explore our samples of AI-generated videos</p>
+        
+        <div class="video-tabs">
+            <button class="video-tab active" data-video-tab="text-to-video">Text to Video</button>
+            <button class="video-tab" data-video-tab="image-to-video">Image to Video</button>
+            <button class="video-tab" data-video-tab="motion-generation">Motion Generation</button>
+            <button class="video-tab" data-video-tab="style-transfer">Style Transfer</button>
+        </div>
+        
+        <!-- Text to Video Content -->
+        <div class="video-content active" id="text-to-video">
+            <div class="video-card">
+                <h3 class="video-title">Urban Cityscape</h3>
+                <p class="video-description">Generated from "futuristic city with flying cars"</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="./videos/video_1.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Ocean Waves</h3>
+                <p class="video-description">Generated from "serene ocean waves at sunset"</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Space Journey</h3>
+                <p class="video-description">Generated from "traveling through cosmic nebula"</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Fantasy Landscape</h3>
+                <p class="video-description">Generated from "magical floating islands with waterfalls"</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image to Video Content -->
+        <div class="video-content" id="image-to-video">
+            <div class="video-card">
+                <h3 class="video-title">Portrait Animation</h3>
+                <p class="video-description">Still portrait brought to life with subtle movements</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Landscape Transformation</h3>
+                <p class="video-description">Static landscape with dynamic weather effects</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">3D Object Rotation</h3>
+                <p class="video-description">2D image converted to rotating 3D model</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Artwork Extension</h3>
+                <p class="video-description">Image extended beyond its original boundaries</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Motion Generation Content -->
+        <div class="video-content" id="motion-generation">
+            <div class="video-card">
+                <h3 class="video-title">Character Animation</h3>
+                <p class="video-description">AI generated character with fluid movements</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Dynamic Particles</h3>
+                <p class="video-description">Physics-based particle simulation</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Fluid Simulation</h3>
+                <p class="video-description">Realistic fluid dynamics generated by AI</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Abstract Motion</h3>
+                <p class="video-description">Procedurally generated abstract movement</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Style Transfer Content -->
+        <div class="video-content" id="style-transfer">
+            <div class="video-card">
+                <h3 class="video-title">Impressionist Style</h3>
+                <p class="video-description">Video transformed into impressionist painting style</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Pixel Art</h3>
+                <p class="video-description">Real footage converted to pixel art animation</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Neon Aesthetic</h3>
+                <p class="video-description">Video with applied cyberpunk neon style</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-title">Watercolor Animation</h3>
+                <p class="video-description">Footage transformed into flowing watercolor style</p>
+                <div class="video-container">
+                    <video class="video-player" autoplay loop muted playsinline>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-pause-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon" style="display: none;">❚❚</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dubbing-section">
+        <h2>AI Dubbing Technology</h2>
+        <p class="subtitle" style="text-align: center; margin-bottom: 2rem;">Experience videos with real-time language switching</p>
+        
+        <div class="dubbing-container">
+            <div class="dubbing-video-wrapper">
+                <!-- Main video element - we'll switch audio sources via JS -->
+                <video id="dubbing-video" class="dubbing-video-player" autoplay muted loop playsinline>
+                    <source src="./dubbing/non_dubbed_1.mp4" type="video/mp4" id="video-source">
+                    Your browser does not support the video element.
+                </video>
+                
+                <!-- Audio elements for different languages -->
+                <audio id="english-audio" preload="auto">
+                    <source src="./dubbing/non_dubbed_1_audio.mp3" type="audio/mpeg">
+                </audio>
+                
+                <audio id="hindi-audio" preload="auto">
+                    <source src="./dubbing/dubbed_1_audio.mp3" type="audio/mpeg">
+                </audio>
+                
+                <!-- Language selector -->
+                <div class="language-selector">
+                    <button class="language-btn active" data-language="english">
+                        <span class="language-icon">🇬🇧</span>
+                        <span class="language-label">English</span>
+                    </button>
+                    <button class="language-btn" data-language="hindi">
+                        <span class="language-icon">🇮🇳</span>
+                        <span class="language-label">हिंदी</span>
+                    </button>
+                </div>
+                
+                <!-- Video controls -->
+                <div class="dubbing-controls">
+                    <button class="dubbing-play-btn">
+                        <span class="dubbing-play-icon">▶</span>
+                        <span class="dubbing-pause-icon" style="display: none;">❚❚</span>
+                    </button>
+                    <div class="dubbing-progress">
+                        <div class="dubbing-progress-bar"></div>
+                    </div>
+                    <button class="dubbing-mute-btn">
+                        <span class="dubbing-volume-icon">🔊</span>
+                        <span class="dubbing-mute-icon" style="display: none;">🔇</span>
+                    </button>
+                </div>
+            </div>
+    </section>    
+        
+
+    <section class="audio-section">
+        <h2>AI Audio Generation</h2>
+        <p class="subtitle" style="text-align: center; margin-bottom: 2rem;">Explore our samples of AI-generated audio</p>
+        
+        <div class="audio-tabs">
+            <button class="audio-tab active" data-audio-tab="text-to-speech">Text to Speech</button>
+            <button class="audio-tab" data-audio-tab="text-to-music">Text to Music</button>
+            <button class="audio-tab" data-audio-tab="voice-to-voice">Voice to Voice</button>
+            <button class="audio-tab" data-audio-tab="text-to-sfx">Text to SFX</button>
+            <button class="audio-tab" data-audio-tab="voice-covers">Voice Covers</button>
+        </div>
+        
+        <!-- Text to Speech Content -->
+        <div class="audio-content active" id="text-to-speech">
+            <div class="audio-card">
+                <h3 class="audio-title">Natural Narration</h3>
+                <p class="audio-description">AI generated voice with natural intonation and emphasis</p>
+                <audio class="audio-player" controls>
+                    <source src="./audios/tts_1.wav" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Professional Announcement</h3>
+                <p class="audio-description">Clear and professional tone for business presentations</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Storytelling Voice</h3>
+                <p class="audio-description">Expressive voice perfect for audiobooks and stories</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Multi-language Support</h3>
+                <p class="audio-description">Seamless translation and natural pronunciation</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-card">
+                <h3 class="audio-title">Multi-language Support</h3>
+                <p class="audio-description">Seamless translation and natural pronunciation</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <!-- Text to Music Content -->
+        <div class="audio-content" id="text-to-music">
+            <div class="audio-card">
+                <h3 class="audio-title">Ambient Atmosphere</h3>
+                <p class="audio-description">Generated from "peaceful forest with gentle streams"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Electronic Beat</h3>
+                <p class="audio-description">Generated from "energetic futuristic synth wave"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Orchestral Suite</h3>
+                <p class="audio-description">Generated from "epic movie score with strings and brass"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Electronic Beat</h3>
+                <p class="audio-description">Generated from "energetic futuristic synth wave"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Jazz Improvisation</h3>
+                <p class="audio-description">Generated from "smooth jazz trio with piano solo"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <!-- Voice to Voice Content -->
+        <div class="audio-content" id="voice-to-voice">
+            <div class="audio-card">
+                <h3 class="audio-title">Voice Style Transfer</h3>
+                <p class="audio-description">Original voice converted to a different speaking style</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Accent Transformation</h3>
+                <p class="audio-description">Same voice with different regional accent</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Accent Transformation</h3>
+                <p class="audio-description">Same voice with different regional accent</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Emotional Conversion</h3>
+                <p class="audio-description">Neutral voice transformed to express different emotions</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Age Modification</h3>
+                <p class="audio-description">Voice modified to sound younger or older</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <!-- Text to SFX Content -->
+        <div class="audio-content" id="text-to-sfx">
+            <div class="audio-card">
+                <h3 class="audio-title">Nature Sounds</h3>
+                <p class="audio-description">Generated from "thunderstorm with heavy rain"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Nature Sounds</h3>
+                <p class="audio-description">Generated from "thunderstorm with heavy rain"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-card">
+                <h3 class="audio-title">Sci-Fi Effects</h3>
+                <p class="audio-description">Generated from "futuristic spaceship engine startup"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Urban Environment</h3>
+                <p class="audio-description">Generated from "busy coffee shop ambience"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Creature Sounds</h3>
+                <p class="audio-description">Generated from "mythical dragon roar"</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <!-- Voice Covers Content -->
+        <div class="audio-content" id="voice-covers">
+            <div class="audio-card">
+                <h3 class="audio-title">Political Voice Cover</h3>
+                <p class="audio-description">Popular song in Modi's voice style</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Cross-Genre Remix</h3>
+                <p class="audio-description">Pop song covered in classical opera style</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="audio-card">
+                <h3 class="audio-title">Historical Voice Recreation</h3>
+                <p class="audio-description">Modern song in the style of a historical figure</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-card">
+                <h3 class="audio-title">Historical Voice Recreation</h3>
+                <p class="audio-description">Modern song in the style of a historical figure</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-card">
+                <h3 class="audio-title">Historical Voice Recreation</h3>
+                <p class="audio-description">Modern song in the style of a historical figure</p>
+                <audio class="audio-player" controls>
+                    <source src="#" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
