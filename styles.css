@@ -609,7 +609,7 @@ p.subtitle {
 }
 .vfx-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding: 0 1rem;
 }
@@ -667,13 +667,13 @@ p.subtitle {
 }
 @media (max-width: 768px) {
   .vfx-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
   .vfx-tab {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
-}
+  }
 }
 @media (max-width: 480px) {
   .vfx-grid {
