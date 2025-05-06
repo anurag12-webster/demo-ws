@@ -638,6 +638,46 @@ p.subtitle {
   }
 }
 
+/* Dubbing Section Styles */
+.dubbing-section {
+  padding: 2rem;
+}
+
+.dubbing-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.dubbed-video {
+  flex: 0 1 400px;
+  min-width: 280px;
+  text-align: center;
+}
+
+.dubbed-video video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-label {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .dubbed-video {
+    flex: 0 1 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
 /* Audio Section */
 .audio-section {
   max-width: 1600px;
